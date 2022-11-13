@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Section  */
+nav {
+  width: 100%;
+  margin: auto;
+  padding: 25px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.logo {
+  width: 250px;
+  cursor: pointer;
+}
+#links {
+  margin-left: 200px;
+}
+nav #links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 10px;
+}
+nav #links ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+nav #links ul li a:hover {
+  color: #c9ab81;
+}
+#button .login {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  margin-right: 10px;
+}
+#button .login:hover {
+  color: #c9ab81;
+}
+#button .signup {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 1px solid #c9ab81;
+  border-radius: 5px;
+}
+#button .signup:hover {
+  color: #c9ab81;
+}
+
+/* Auction Section  */
+.auction {
+  text-align: center;
+  margin-top: 50px;
+}
+.auction h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: #333;
+}
+.auctions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 15%;
+  border-bottom: 1px solid rgb(238, 225, 225);
+  position: relative;
+}
+.auctions h2 {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(163, 156, 156);
+}
+.auctions .subheading-1::after {
+  content: "";
+  width: 150px;
+  display: block;
+  height: 3px;
+  background-color: #c9ab81;
+  margin-top: 75px;
+}
+.auctions .subheading-2::after {
+  content: "";
+  width: 150px;
+  display: block;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 75px;
+}
+.auctions h3 {
+  position: absolute;
+  top: 82px;
+  left: 220px;
+  color: #fff;
+  background-color: rgb(85, 201, 85);
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.bid {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+/* Upcoming Auction Section 1  */
+.product-1 {
+  height: 100vh;
+  padding: 40px 0px;
+  position: relative;
+  margin-bottom: -100px;
+}
+.productImg {
+  width: 30%;
+  margin-left: 180px;
+}
+.productDetails-1 {
+  position: absolute;
+  top: 6%;
+  right: 10%;
+  width: 40%;
+  font-family: "EB Garamond", serif;
+}
+.live-auction {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: rgb(81, 79, 79);
+  margin-bottom: 20px;
+}
+.camera {
+  color: #c9ab81;
+  font-size: 18px;
+  border-left: 1px solid rgb(108, 103, 103);
+  padding-left: 20px;
+}
+.productTitle {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #333;
+}
+.productPrice {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
+  color: #333;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.starts {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-right: 30px;
+}
+.live {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-right: 30px;
+  color: rgb(42, 187, 42);
+}
+.add {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  color: #c9ab81;
+  cursor: pointer;
+}
+.add-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.productDesc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(77, 75, 75);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.buttons .registerButton {
+  padding: 18px 50px;
+  background-color: #c9ab81;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.buttons .catalogButton {
+  padding: 18px 50px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  border: 1px solid #c9ab81;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Slider Section 1  */
+.slider-1 {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(238, 225, 225);
+}
+.swiper {
+  width: 80%;
+  height: 60%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 85%;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #c9ab81;
+}
+.slider-1 h3 {
+  position: absolute;
+  top: 150px;
+  left: 230px;
+  color: #fff;
+  background-color: #d8b88b;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+.time {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+/* Upcoming Section 2  */
+.product-2 {
+  height: 100vh;
+  padding: 70px 0px;
+  position: relative;
+  margin-bottom: -60px;
+}
+.productDetails-2 {
+  position: absolute;
+  top: 11%;
+  right: 10%;
+  width: 40%;
+  font-family: "EB Garamond", serif;
+}
+.live2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-right: 30px;
+  color: red;
+}
+
+/* Slider Section 2  */
+.slider-2 {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(238, 225, 225);
+  margin-bottom: 80px;
+}
+.swiper {
+  width: 80%;
+  height: 60%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 85%;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #c9ab81;
+}
+
+/* Footer Section  */
+.footer {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #272727;
+}
+.footer p {
+  color: #fff;
+  justify-content: flex-start;
+  font-size: 13px;
+}
+.f-links ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 13px;
+}
+.f-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.f-links ul li a:hover {
+  color: #c9ab81;
+}
