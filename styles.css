@@ -7,6 +7,7 @@
 
 /* Navbar Section  */
 nav {
+  background-color: rgba(48, 15, 15, 0.939);
   width: 100%;
   margin: auto;
   padding: 25px 70px;
@@ -15,6 +16,10 @@ nav {
   justify-content: space-between;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
+ ;
+}
+nav a {
+  color: black;
 }
 .logo {
   width: 250px;
@@ -30,11 +35,15 @@ nav #links ul li {
 }
 nav #links ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: #c9ab81;
+  font-weight: 700;
+}
+.active{
+  text-decoration: underline;
+  color: black;
 }
 nav #links ul li a:hover {
-  color: #c9ab81;
+  color: black;
 }
 #button .login {
   text-decoration: none;

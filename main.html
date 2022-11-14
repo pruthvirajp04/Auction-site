@@ -25,6 +25,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="./styles.css" />
+<style>
+  .btn-group>:not(.btn-check)+.btn {
+    background-color: brown;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+</style>
 </head>
 
 <body>
@@ -51,7 +63,7 @@
     var auth = firebase.auth();
   </script>
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-primary">
+  <!-- <nav class="navbar navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand mb-0 h1">
         <img src="./img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -60,6 +72,24 @@
       <a class="navbar-brand" id="username-display"></a>
       <button id="signup-button" class="btn btn-secondary" type="submit" onclick="openLogin()">Sign up</button>
     </div>
+    
+  </nav> -->
+  <nav>
+    <a class="navbar-brand mb-0 h1">
+      <img src="./img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+     <span style="color: #c9ab81;">
+      RDJ Auction
+     </span>
+    </a>
+    <div id="links">
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./main.html" class="active">START AUCTION</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <a class="navbar-brand" id="username-display"></a>
+    <button id="signup-button" class="btn btn-secondary" type="submit" onclick="openLogin()">Sign up</button>
   </nav>
   <!-- Grid of auction items -->
   <div id="auction-container" class="container">
@@ -71,7 +101,7 @@
       </div>
 
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="bi bi-github text-muted" href="https://github.com/HMellor/" width="24"
+        <li class="ms-3"><a class="bi bi-github text-muted" href="https://github.com/pruthvirajp04/" width="24"
             height="24"></a></li>
       </ul>
     </footer>
@@ -144,7 +174,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Cancel">Cancel</button>
-          <button type="submit" class="btn btn-primary" onclick="placeBid()">Submit bid</button>
+          <button type="submit" class="btn btn-primary" onclick="placeBid()"
+           style="background-color: rgb(90, 38, 38);">Submit bid</button>
         </div>
       </div>
     </div>

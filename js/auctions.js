@@ -13,7 +13,7 @@ let endTimes = []; // Make sure to fix these to UTC time so they don't change wi
 function generateRandomAuctions() {
   // Random cat images
   document.querySelectorAll(".card > img").forEach(img => {
-    img.src = "https://source.unsplash.com/random/900×700/?car"
+    img.src = "https://cataas.com/cat/cute?random=" + Math.random()
     primaryImages.push(img.src);
     secondaryImages.push(img.src);
   });
